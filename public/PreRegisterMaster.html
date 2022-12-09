@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Home</title>
+
+        <link rel="stylesheet" type= "text/css" href="css/PRMStyle.css">
+
+        <script src="https://kit.fontawesome.com/069083514f.js" crossorigin="anonymous"></script>
+        <script src="js/TreeGui.js"></script>
+        <script src="js/Main.js"></script>
+
+    </head>
+    <body>
+
+        <div id="maincontainer">
+        <div id = "header">
+        <h1 id = "maintitle">Apprentice</h1>
+        </div>
+
+        <div id="descriptioncontainer">
+
+            <!--
+        <p id = "description">Applying the master-apprentice model of the middle-ages to information-based remote jobs. <br> <br>
+            -Apprentices:  Learn on the job <br>
+            -Master:  Work multiple jobs at once <br>
+            -Companies:  Pay a lower salary 
+        </p>-->
+
+        </div>
+
+        <div id= "imgcont"> 
+        <img id = "masterpannelimg" src="Images/apprenticemasterpannel.jpg">
+        </div>
+
+            <div id="formcont">
+                <div id="form">
+                    <div id = "formtot"> 
+                    <div id="title_container">
+                      <h2 id="formtitle">Pre-Register to be a master</h2>
+                      <p id="nospam">No spam, we will only send you an e-mail notifying you <br> if and when you're accepted.  </p>
+                    </div>
+      
+                        <form id = "registerform">
+                          
+
+                          <div class="input_field"> <span><i aria-hidden="true"></i></span>
+                            <input type="email" name="email" placeholder="Email" required />
+                          </div>
+      
+                          <div class="input_field"> <span><i aria-hidden="true"></i></span>
+                            <input type="text" id='worklink' name="work" placeholder="Link to Github / Linkedin / Personal Portfolio / ..." required />
+                            </div>
+
+                            <div id="selectordiv">
+                                <label id="craftselector">Select your craft</label>
+                                <img id="arrow" src="Images/arrowdown.png"> 
+                            
+                            </div>
+
+                            <div id = "TreeGui">
+                            </div>
+
+                              <div class="input_field" id="commentinput"> <span><i aria-hidden="true"></i></span>
+                                <textarea id = "comment" placeholder="Comment" name="comment" required></textarea>
+                                </div>
+
+                          <input id= "registerbutton" type = 'submit' value="Pre-register" />
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+        <footer></footer>
+
+    </body>
+
+</html>
