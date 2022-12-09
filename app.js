@@ -33,15 +33,6 @@ app.post('/PreRegisterMaster',multer().none(), function requestHandler(req, res)
   console.log("datatest",req.body)
   console.log("datatest",req.body.email)
 
-
-
-message = {
-  from: "little soldier",
-  to: "apprentice.edu.contact@gmail.com",
-  subject: "New Pre-Registration",
-  text: "test"
-  }
-
   const tranEmailApi = new Sib.TransactionalEmailsApi()
 
   const sender = {
@@ -59,7 +50,7 @@ message = {
     .sendTransacEmail({
         sender: sender,
         to: receivers,
-        subject: 'test',
+        subject: 'testgitpipeline',
         textContent: `
         {{ params.email }} {{ params.craft }} {{ params.work }} {{ params.comment }}
         `,
