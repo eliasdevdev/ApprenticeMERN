@@ -66,6 +66,6 @@ app.post('/PreRegisterMaster',multer().none(), function requestHandler(req, res)
 
 
 
-    res.send([body])
+    res.send([req.body])
 
 })
