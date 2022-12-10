@@ -35,8 +35,6 @@ FD.append('craft', selectedcraft);
 
 XHR.addEventListener("load", (event) => {
 
-  alert(event.target.responseText);
-
 });
 
 
@@ -51,7 +49,7 @@ XHR.open("POST", "/PreRegisterMaster");
 
 
 
-const response = XHR.send(FD);
+XHR.send(FD);
 
 }
 
