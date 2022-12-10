@@ -20,9 +20,6 @@ app.listen(port, () => {})
 app.use(express.static(__dirname + '/public'));
 
 
-
-
-
 app.route("/").get(function (req, res) {
   res.sendFile(process.cwd() + "/public/PreRegisterMaster.html");
 });
@@ -58,11 +55,11 @@ app.post('/PreRegisterMaster',multer().none(), function requestHandler(req, res)
             comment: req.body.comment,
         },
     })
-    .then(console.log)
-    .catch(console.log)
+    .then(res.send("email sent"))
+    .catch(res.send("error"))
 
 
 
-    res.send("email sent")
+
 
 })

@@ -46,22 +46,23 @@ XHR.addEventListener("error", (event) => {
 
 XHR.open("POST", "/PreRegisterMaster");
 
-
-
-
 XHR.send(FD);
+
+
 
 }
 
 
 form.addEventListener("submit", (event) => {
 
-
-
-    
 event.preventDefault();
 
+
+
+
+
 sendData();
+
 });
 
    
