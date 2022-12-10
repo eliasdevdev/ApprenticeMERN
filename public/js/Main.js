@@ -51,7 +51,8 @@ XHR.open("POST", "/PreRegisterMaster");
 
 
 
-XHR.send(FD);
+const response = XHR.send(FD);
+
 }
 
 
