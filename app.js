@@ -30,13 +30,10 @@ app.route("/").get(function (req, res) {
 
 app.post('/PreRegisterMaster',multer().none(), function requestHandler(req, res) {
 
-  console.log("datatest",req.body)
-  console.log("datatest",req.body.email)
-
   const tranEmailApi = new Sib.TransactionalEmailsApi()
 
   const sender = {
-      email: 'elias.devo3@gmail.com',
+      email: 'apprentice.edu.contact@gmail.com',
       name: 'Elias',
   }
   
@@ -66,6 +63,6 @@ app.post('/PreRegisterMaster',multer().none(), function requestHandler(req, res)
 
 
 
-    res.send([req.body])
+    res.send("email sent")
 
 })
