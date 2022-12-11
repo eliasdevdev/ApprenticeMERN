@@ -40,7 +40,7 @@ app.post('/PreRegisterMaster',multer().none(), function requestHandler(req, res)
       },
   ]
 
-  tranEmailApi
+   tranEmailApi
     .sendTransacEmail({
         sender: sender,
         to: receivers,
@@ -55,11 +55,9 @@ app.post('/PreRegisterMaster',multer().none(), function requestHandler(req, res)
             comment: req.body.comment,
         },
     })
-    .then(res.send("email sent"))
-    .catch(res.send("error"))
+    .then()
+    .catch()
 
-
-
-
+   res.send('worked')
 
 })

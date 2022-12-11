@@ -1,4 +1,3 @@
-
 window.onload = function () {
 
     treeGui = convStringToGui(categoriesstring,'<')
@@ -12,9 +11,6 @@ window.onload = function () {
         toggleGui()
 
     });
-
-
-
 
 
 //Form Functionality
@@ -33,22 +29,25 @@ const selectedcraft = document.getElementById('craftselector').innerHTML
 FD.append('craft', selectedcraft);
 
 
+XHR.onreadystatechange = function() {
+    if (XHR.readyState == XMLHttpRequest.DONE) {
+        if(XHR.responseText == "worked"){
+            alert("Thank you for registering");
+        }
+    }
+}
+
 XHR.addEventListener("load", (event) => {
 
 });
-
-
 
 XHR.addEventListener("error", (event) => {
   alert('Oops! Something went wrong.');
 });
 
-
 XHR.open("POST", "/PreRegisterMaster");
 
 XHR.send(FD);
-
-
 
 }
 
@@ -62,6 +61,7 @@ event.preventDefault();
 
 
 sendData();
+
 
 });
 
