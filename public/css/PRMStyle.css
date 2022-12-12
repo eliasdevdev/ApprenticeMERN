@@ -1,11 +1,10 @@
 @font-face {
     font-family: 'Roobert';
-    src: url('./Font/Roobert-Regular.woff2') format('woff2'),
-        url('./Font/Roobert-Regular.woff') format('woff'),
-        url('./Font/Roobert-Regular.ttf') format('ttf');
+    src: url('../Font/Roobert-Regular.woff2') format('woff2'),
+        url('../Font/Roobert-Regular.woff') format('woff'),
+        url('../Font/Roobert-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
   }
   
   *{
