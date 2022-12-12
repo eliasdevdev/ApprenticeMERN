@@ -149,13 +149,6 @@
     outline: none;
 }
 
-@media screen and (max-width: 1300px) {
-  #worklink {
-    font-size: 60%;
-  }
- 
-}
-
 #commentinput{
     width: 81%;
     height: 30%;
@@ -287,7 +280,6 @@ footer{
     /*border: 7px solid rgb(83, 83, 83);*/
     border-radius: 7px;
     
-
 }
 
 .pane_invisible{
@@ -312,7 +304,40 @@ footer{
     color: black;
 }
 
+@media screen and (max-width: 1300px) {
+  #worklink {
+    font-size: 60%;
+  }
+ 
+}
 
+@media screen and (max-width: 1100px) {
+
+  .el > label{
+    font-size: 0.65rem;
+
+ }
+
+}
+
+@media screen and (max-width: 950px) {
+
+  .el > label{
+    font-size: 0.60rem;
+
+ }
+
+
+}
+
+@media screen and (max-width: 850px) {
+
+  .el > label{
+    font-size: 0.55rem;
+
+ }
+
+}
 
 
 
